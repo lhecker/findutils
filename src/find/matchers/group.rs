@@ -11,6 +11,7 @@ use nix::unistd::Group;
 use std::os::unix::fs::MetadataExt;
 
 pub struct GroupMatcher {
+    #[allow(dead_code, reason = "Unused on Windows")]
     gid: ComparableValue,
 }
 

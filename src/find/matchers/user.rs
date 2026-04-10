@@ -11,6 +11,7 @@ use nix::unistd::User;
 use std::os::unix::fs::MetadataExt;
 
 pub struct UserMatcher {
+    #[allow(dead_code, reason = "Unused on Windows")]
     uid: ComparableValue,
 }
 
